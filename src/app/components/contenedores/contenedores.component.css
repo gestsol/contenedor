@@ -36,7 +36,22 @@
      height: 400px;
 }
 
+.contenedor-item{
+	border: solid 1px;
+	width: 550px;
+	padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 
+.btnEliminar{
+	background: transparent url('/assets/img/kisspng-plus-and-minus-signs-meno-clip-art-plus-5b1050c3f2ed69.501614011527795907995.png') 0% 0% no-repeat padding-box;
+	width: 30px;
+    height: 30px;
+    background-size: cover;
+    float: right;
+	cursor: pointer;
+	margin-top: -15px;
+}
 
 

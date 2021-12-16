@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {NgModule, Renderer2, ElementRef } from '@angular/core';
+import {NgModule, Renderer2, ElementRef, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-contenedores',
@@ -8,28 +8,23 @@ import {NgModule, Renderer2, ElementRef } from '@angular/core';
 })
 export class ContenedoresComponent implements OnInit {
 
-  constructor(private elementRef:ElementRef, private renderer:Renderer2) { }
+	public items = [''];
+  
+	constructor(private elementRef:ElementRef, private renderer:Renderer2) { }
 
-  ngOnInit(): void {
-  }
+
+
+	 ngOnInit(): void {
+	  
+	 }
   
 	agregar(){
-		var numDiv = document.getElementsByClassName("contenedor-item").length;
-		
-		numDiv++;
-		 
-		var div: HTMLDivElement = this.renderer.createElement('div');
-		div.className = "contenedor-item";
-		div.id= "contenedor"+numDiv; 
-
-		div.innerHTML = '<div (click)="borrar('+numDiv+')" class="btnEliminar"></div><input type="text" class="inputSmall" placeholder="text1" /><input type="text" class="inputSmall" placeholder="text2" /><input type="text" class="inputSmall" placeholder="text3" /><br><span>Acción:</span><br><textarea></textarea>';
-		this.renderer.appendChild(document.getElementById("contenedor-inferior"), div);
+		this.items.push('');
 
 	}
-	
-	
-	borrar(numDiv: any){
-		alert(numDiv);
+
+	borrar(index: any){
+		 this.items.splice(index, 1);
 	}
 }
 

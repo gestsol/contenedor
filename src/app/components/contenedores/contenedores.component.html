@@ -4,6 +4,9 @@
 			<a (click)="agregar()" ><div class="btnAgregar"></div></a>
 		</div>
 		<div id ="contenedor-inferior" class="contenedor-inferior">
-		<app-inferior></app-inferior>
+			<div *ngFor="let item of items; let indice=index" class="contenedor-item" id="contenedor" >
+				<div (click)="borrar(indice)"class="btnEliminar"></div>
+				<app-inferior></app-inferior>
+			</div>
 		</div>
 </div>

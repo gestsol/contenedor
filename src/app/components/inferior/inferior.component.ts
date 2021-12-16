@@ -12,7 +12,5 @@ export class InferiorComponent implements OnInit {
   ngOnInit(): void {
   }
 	
-	borrar(numDiv: any){
-		alert(numDiv);
-	}
+
 }
