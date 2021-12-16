@@ -1,0 +1,29 @@
+.contenedor-item > span{
+	margin-left: 30px; 
+	font-weight: bold;
+}
+
+.contenedor-item{
+	border: solid 1px;
+	width: 550px
+}
+
+.inputSmall{
+	width: 100px;
+	margin-left: 30px
+}
+
+textarea{
+	margin-left: 30px;
+	width: 500px;
+}
+
+
+.btnEliminar{
+	background: transparent url('/assets/img/kisspng-plus-and-minus-signs-meno-clip-art-plus-5b1050c3f2ed69.501614011527795907995.png') 0% 0% no-repeat padding-box;
+	width: 30px;
+    height: 30px;
+    background-size: cover;
+    float: right;
+	cursor: pointer;
+}

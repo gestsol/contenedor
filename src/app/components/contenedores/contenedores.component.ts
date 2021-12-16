@@ -22,8 +22,7 @@ export class ContenedoresComponent implements OnInit {
 		div.className = "contenedor-item";
 		div.id= "contenedor"+numDiv; 
 
-		div.innerHTML = '<div onclick="borrar('+numDiv+')" class="btnEliminar"></div><input type="text" class="inputSmall" placeholder="text1" /><input type="text" class="inputSmall" placeholder="text2" /><input type="text" class="inputSmall" placeholder="text3" /><br><span>Acción:</span><br><textarea></textarea>';
-		console.log(div);
+		div.innerHTML = '<div (click)="borrar('+numDiv+')" class="btnEliminar"></div><input type="text" class="inputSmall" placeholder="text1" /><input type="text" class="inputSmall" placeholder="text2" /><input type="text" class="inputSmall" placeholder="text3" /><br><span>Acción:</span><br><textarea></textarea>';
 		this.renderer.appendChild(document.getElementById("contenedor-inferior"), div);
 
 	}

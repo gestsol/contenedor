@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { ContenedoresComponent } from './components/contenedores/contenedores.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { InferiorComponent } from './components/inferior/inferior.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    ContenedoresComponent
+    ContenedoresComponent,
+    SidebarComponent,
+    InferiorComponent
   ],
   imports: [
     BrowserModule,
