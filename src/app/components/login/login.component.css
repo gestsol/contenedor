@@ -1,0 +1,34 @@
+.contenedor-principal {
+	background-color: #d1eddf !important;
+    height: 500px;
+    width: 800px;
+    border: solid 1px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contenedor-formulario {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+input{
+	width: 200px;
+    height: 30px;
+    text-align: center;
+	border: solid 1px;
+}
+
+.btnLogin{
+	background: transparent url('/assets/img/green-play-button-png.png') 0% 0% no-repeat padding-box;
+	width: 75px;
+    height: 75px;
+    background-size: cover;
+    margin: 0 auto;
+	cursor: pointer;
+}
